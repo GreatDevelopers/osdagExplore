@@ -1,3 +1,17 @@
+## OS: MS Windows 11
+
+```sh
+ curl.exe https://repo.anaconda.com/miniconda/Miniconda3-py312_26.1.1-1-Windows-x86_64.exe --output .\Miniconda3.exe
+.\Miniconda3.exe
+
+> Follow onscreen interation
+
+```
+
+## Open termical
+
+Press [Window] key, and start typing `anaconda prompt`; and on seeing `Anaconda Prompt (App)`. click on `Open` to launch it. 
+
 ```sh
 
 (base) D:\>md IIT_OSD
@@ -477,4 +491,15 @@ Channel "defaults" has the following notices:
 
 
 (base) D:\IIT_OSD>
+```
+
+## launching Osdag
+
+## Open termical
+
+Press [Window] key, and start typing `anaconda prompt`; and on seeing `Anaconda Prompt (App)`. click on `Open` to launch it. 
+
+```sh
+conda activate osdag-env
+osdag
 ```
