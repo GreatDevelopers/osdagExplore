@@ -1,56 +1,62 @@
-# Getting Started with Osdag Development
+# Getting Started with Osdag Development from Source
 
-This guide helps developers set up a complete Osdag development environment from source.
+> [!IMPORTANT]
+> This guide is intended for developers building Osdag from source.
+>
+> If you are installing Osdag using the official installer, this guide does not apply.
 
 ## Overview
 
-Osdag consists of multiple repositories. Depending on the component you are working on, you may need one or more of them.
+This guide helps developers set up a complete Osdag development environment.
 
 The primary repository is:
 
 - **Osdag**
   - https://github.com/osdag-admin/Osdag
 
-Some features rely on supporting repositories.
-
-For example, PDF report generation requires the **osdag-latex-env** package.
+A complete development setup may also require supporting repositories that provide additional functionality.
 
 ---
 
-# Development Setup
+## Development Setup
 
 The recommended setup sequence is:
 
 1. Install Conda.
 2. Clone the Osdag repository.
 3. Create the Osdag development environment.
-4. Build and install supporting packages.
-5. Run Osdag.
+4. Build and install any required supporting packages.
+5. Build and run Osdag.
 
 ---
 
-# Supporting Packages
+## Supporting Components
 
-## osdag-latex-env
+Some Osdag features require additional supporting packages.
 
-Osdag uses `osdag-latex-env` to generate PDF reports.
+### osdag-latex-env
 
-Before building or running Osdag with PDF report generation enabled, build and install this package.
+`osdag-latex-env` provides the self-contained LaTeX runtime used by Osdag for LaTeX-based report generation.
+
+Without `osdag-latex-env`:
+
+- Design calculations continue to work.
+- The graphical user interface continues to work.
+- Most Osdag features continue to work.
+- PDF report preview and PDF report generation are **not available**.
+
+Developers who intend to use or test PDF report generation should build and install `osdag-latex-env`.
 
 See:
 
-**Building and Installing osdag-latex-env**
-
-[Build and install build-latex-env](build_latex_env.md)
+- [Building and Installing osdag-latex-env](build_latex_env.md)
 
 ---
 
-# Build Osdag
+## Build Osdag
 
 Once all required supporting packages have been installed, continue with the Osdag build instructions.
 
 See:
 
-**Building Osdag**
-
-[Build Osdag](build_Osdag.md)
+- [Build Osdag](build_osdag.md)
