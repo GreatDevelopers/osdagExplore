@@ -41,7 +41,7 @@ See:
 
 **Building and Installing osdag-latex-env**
 
-(build_latex_env.md)
+[Build and install build-latex-env](build_latex_env.md)
 
 ---
 
@@ -53,4 +53,4 @@ See:
 
 **Building Osdag**
 
-(build_osdag.md)
+[Build Osdag](build_Osdag.md)
