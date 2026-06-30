@@ -1,7 +1,9 @@
-# Building and Installing `osdag-latex-env` for Osdag Development
+# Building and Installing osdag-latex-env
 
-> [!IMPORTANT]
-> This guide is intended **only for Osdag developers** building or modifying Osdag from source.
+> [!NOTE]
+> This document describes how to build and install **osdag-latex-env**, a supporting package used by Osdag for PDF report generation.
+>
+> If you are setting up Osdag for development, begin with [**Getting Started with Osdag Development**](getting_started.md), then return here when instructed.
 >
 > If you are installing Osdag using the official installer, **you do not need this guide**. The LaTeX environment is installed automatically.
 
